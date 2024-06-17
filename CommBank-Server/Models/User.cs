@@ -16,6 +16,9 @@ public class User
     public string? Password { get; set; }
 
     [BsonRepresentation(BsonType.ObjectId)]
+    public List<string>? ApplicationIds { get; set; }
+
+    [BsonRepresentation(BsonType.ObjectId)]
     public List<string>? AccountIds { get; set; }
 
     [BsonRepresentation(BsonType.ObjectId)]
