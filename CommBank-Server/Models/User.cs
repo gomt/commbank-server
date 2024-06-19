@@ -15,6 +15,7 @@ public class User
 
     public string? Password { get; set; }
 
+    // Added ApplicationIds List below as the Model picture shows ApplicationIds
     [BsonRepresentation(BsonType.ObjectId)]
     public List<string>? ApplicationIds { get; set; }
 

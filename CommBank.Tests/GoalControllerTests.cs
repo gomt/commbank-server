@@ -75,6 +75,7 @@ public class GoalControllerTests
         // Act
         var httpContext = new Microsoft.AspNetCore.Http.DefaultHttpContext();
         controller.ControllerContext.HttpContext = httpContext;
+        // Actual changes start below
         var result = await controller.GetForUser(goals[0].UserId!);
         
         // Assert
